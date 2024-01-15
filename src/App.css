@@ -1,0 +1,609 @@
+*{
+   padding: 0;
+   margin: 0;
+   background-color: black;
+}
+body{
+   color: white;
+}
+:root{
+   --red:rgb(248, 7, 7);
+   --backgroung:rgb(31, 30, 30);
+}
+.home{
+   color:var(--red);
+   background-color: var(--backgroung);
+   padding: 15px;
+}
+.symbol{
+   display: flex;
+   background-color: var(--backgroung);
+   margin-left:5vw;
+}
+#heading{
+   background-color: var(--backgroung);
+   margin-left: 8px;
+}
+#tube{
+   font-size:24px;
+   margin-top: 5px;
+   background-color: var(--backgroung);
+}
+.search{
+   width: 350px;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 25px;
+   margin-left: 10vw;
+   background-color: var(--backgroung);
+}
+.search input{
+   padding: 10px 25px;
+   font-size: 18px;
+   border-radius: 25px;
+   border: 1px solid rgb(110, 110, 110);
+   color: white;
+}
+.search svg{
+    font-size: 25px;
+    margin-top:6px;
+    background-color: var(--backgroung);
+    color: rgb(204, 202, 202);
+}
+.search svg:focus,
+.search svg:hover{
+   color: var(--red);
+}
+.content{
+  color: white;
+  margin-top:8px;
+  margin-left: 20px;
+}
+.li{
+   list-style: none;
+   border-bottom: 1px solid rgb(94, 93, 93);
+   padding: 15px;
+}
+.profile{
+   display: flex;
+   text-decoration: none;
+}
+#usericon{
+   font-size: 14px;
+   color: rgb(2, 48, 134);
+   margin-top:2px;
+}
+#name{
+   color:var(--red);
+   font-size:18px;
+   margin-left: 6px;
+}
+#title{
+   color: white;
+   font-size: 18px;
+   margin-left: 15px;
+   margin-top: 5px;
+   font-weight: bold;
+   padding: 5px 0px;
+   border-radius: 6px;
+   padding-left: 10px;
+}
+#timeDate{
+   margin-left:25px;
+   margin-top: 6px;
+   font-size: 12px;
+   font-weight: 100;
+   color: var(--red);
+}
+#body{
+   margin-top: 10px;
+   font-weight: 400;
+   margin-left: 25px;
+   background: none;
+   color: white;
+}
+.nav{
+   /* position: absolute;
+   top:90vh;
+   width: 100vw; */
+   position: fixed;
+   top:90vh;
+   width: 100vw;
+
+}
+.link{
+   display: flex;
+   justify-content: space-around;
+   margin-top:17px;
+   background-color:var(--backgroung);
+   padding: 10px;
+}
+.link a{
+   background-color: var(--backgroung);
+}
+a > svg {
+   background-color: var(--backgroung);
+   color: white;
+   font-size: 20px;
+}
+a > svg :hover {
+     color: var(--red);
+}
+.taskbar{
+   background-color: var(--backgroung);
+   position: absolute;
+   top:13vh;
+   width:200px;
+   left:40vw;
+}
+.taskbar a{
+   background-color: var(--backgroung);
+   text-decoration: none;
+   color:white;
+   margin-left:10vw;
+}
+.taskbar a:hover
+{
+   color: var(--red);
+}
+.postform{
+  min-width: 300px;
+  height: 500px;
+  /* margin:5vh 20vw ; */
+  margin-left: 10vw;
+  border-radius: 6px;
+}
+.postform p{
+   color: white;
+   font-size: 18px;
+   padding: 5px;
+   margin: 5px;
+   border-bottom: 2px solid rgb(187, 186, 186);
+   width: 200px;
+}
+.username{
+   margin: 15px 0px;
+   padding: 5px;
+}
+.username svg{
+   color: var(--red);
+}
+.username input{
+   padding: 10px;
+   margin-left: 5px;
+   color: white;
+   border-radius: 7px;
+}
+.posttitle{
+   margin: 10px 0px;
+   padding: 5px;
+}
+.posttitle svg{
+   color: var(--red);
+}
+.posttitle input{
+   padding: 10px;
+   margin-left: 5px;
+   color: white;
+   border-radius: 7px;
+}
+.textarea{
+   margin: 10px 0px;
+   padding: 5px;
+}
+.textarea textarea{
+   padding:5px;
+   margin-left: 5px;
+   color: white;
+   border-radius: 7px;
+}
+.newpost button{
+   border: 1px solid var(--red);
+   color: white;
+   margin: 10px 20px;
+   padding: 8px 20vw;
+   font-size: 16px;
+   border-radius: 8px;
+   background-color: var(--red);
+}
+.newpost button:focus,
+.newpost button:hover{
+   background:none;
+   border: 1px solid var(--red);
+}
+.newpost h2{
+   color:white;
+   color: white;
+   margin: 10px 20px;
+   padding: 8px 20vw;
+   padding: 10px 20px;
+   border-bottom: 2px solid white;
+   width: 300px;
+}
+.newpost h3{
+   color: var(--red);
+   font-weight: lighter;
+   font-size: 18px;
+   margin: 5px 20px;
+   padding: 5px 40px;
+}
+.viewpost{
+   margin: 10px 10vw;
+   padding: 10px;
+}
+.viewpost h3{
+   color: var(--red);
+   border-bottom: 1px solid gray;
+   width: 200px;
+   font-size:1.5em;
+}
+.name{
+   margin:5px 10px;
+   padding:10px;
+   display: flex;
+}
+.name label{
+   color: var(--red);
+   font-size: 18px;
+   font-weight: 100;
+   margin-left: 8px;
+}
+.name p{
+   color: white;
+   font-weight: 700;
+   margin-left: 10px;
+   margin-top: 2px;
+}
+.title{
+   margin:5px 15px;
+   padding:0px 5px;
+   display: flex;
+}
+.title label{
+   color: var(--red);
+   font-size: 18px;
+   font-weight: 100;
+   margin-left: 8px;
+}
+.title p{
+   color: white;
+   font-weight: 700;
+   margin-left: 10px;
+   margin-top: 2px;
+}
+.date{
+   margin:5px 15px;
+   padding:6px 5px;
+   display: flex;
+}
+.date label{
+   color: var(--red);
+   font-size: 18px;
+   font-weight: 100;
+   margin-left: 8px;
+}
+.date p{
+   color: white;
+   font-weight: 200;
+   margin-left: 10px;
+   margin-top: 2px;
+   font-size: 12px;
+}
+.textcontent{
+   margin:5px 15px;
+   padding:0px 5px;
+   display: flex;
+}
+.textcontent label{
+   color: var(--red);
+   font-size: 18px;
+   font-weight: 100;
+   margin-left: 8px;
+}
+.textcontent p{
+   color: white;
+   font-weight: 300;
+   margin-left: 15px;
+   margin-top: 2px;
+   font-size: 16px;
+}
+.viewpost svg{
+   margin-top: 3px;
+   font-size: 14px;
+   color: rgb(230, 226, 226);
+}
+.buttons{
+   margin-top: 10vh;
+   margin-left: 5px;
+   display: flex;
+   width: 370px;
+   justify-content: space-between;
+}
+.buttons button{
+   border: 1px solid white;
+   color: white;
+   padding: 10px 30px;
+   border-radius: 6px;
+}
+.buttons :first-child{
+   color: white;
+   border: 1px solid var(--red);
+   
+}
+#del{
+   background-color: var(--red);
+   border: 1px solid var(--red);
+   
+}
+.para{
+   border: 1px solid rgb(128, 125, 125);
+   margin-top:5vh;
+   padding: 5px;
+   border-radius: 6px;
+   box-shadow: 2px 2px 4px rgb(122, 122, 122);
+}
+#first:focus,
+#first:hover{
+   background-color: var(--red);
+   border: 1px solid var(--red);
+}
+#del:focus,
+#del:hover{
+   background:none;
+}
+.update{
+   margin: 5px;
+}
+.update h3{
+   color: var(--red);
+   border-bottom: 1px solid rgb(165, 163, 163);
+   width: 200px;
+   margin: 25px 20px;
+}
+.contentlink{
+   text-decoration: none;
+}
+.heart{
+   display: flex;
+   margin-top: 15px;
+}
+.heart svg{
+   font-size: 16px;
+   margin-top: 4px;
+}
+.heart p{
+   color:var(--red);
+   font-size: 16px;
+   font-weight: 100;
+   margin-top: 5px;
+   margin-left: 5px;
+}
+ #red{
+   color: var(--red);
+ }
+ #white{
+   color: white;
+ }
+#count{
+   color: rgb(189, 189, 190);
+ }
+ #edit{
+   text-decoration: none;
+   color: white;
+   background-color: rgb(1, 13, 51);
+   padding: 10px 30px;
+   border-radius: 6px;
+   font-size: 14px;
+ }
+ #edit:hover{
+      border: 1px solid white;
+      color: rgb(19, 58, 233);
+      background: none;
+ }
+ .comment{
+   display: flex;
+   background-color: var(--backgroung);
+   padding: 5px 0px;
+   margin-top: 5px;
+   border-radius: 6px;
+ }
+ .comment svg{
+   margin-top: 12px;
+   margin-left: 20px;
+   font-size: 16px;
+   color: rgb(21, 138, 248);
+   background: none;
+   position: relative;
+   left: 10px;
+ }
+ .userlogin{
+   color: rgb(252, 252, 252);
+   border: 1px solid rgb(107, 106, 106);
+   width: 300px;
+   position: relative;
+   top: 30vh;
+   left: 25vw;
+   padding: 20px;
+   border-radius: 10px;
+ }
+ #signup{
+   text-align: center;
+   margin-top: 4px;
+   font-size: 18px;
+   color: var(--red);
+   font-weight: 800;
+ }
+ .underline{
+   width: 45px;
+   height: 4px;
+   background-color: white;
+   margin-left:21vw;
+   border-radius: 10px;
+   margin-top: 6px;
+ }
+ .user{
+   margin: 10px 10px;
+ }
+ .userlogin svg{
+   color: var(--red);
+   margin-left: 10px;
+   font-size: 18px;
+ }
+ .user input{
+   margin-left: 10px;
+   border: none;
+   border-bottom: 1px dashed white;
+   font-size: 16px;
+   padding-left:10px;
+   color: rgb(224, 224, 224);
+ }
+ .userlogin input:focus{
+   outline: 0;
+ }
+ .email{
+   margin: 15px 10px;
+ }
+ .email input{
+   margin-left: 10px;
+   border: none;
+   border-bottom: 1px dashed white;
+   font-size: 16px;
+   padding-left: 10px;
+   color: rgb(224, 224, 224);
+ }
+ .password{
+   margin: 15px 10px;
+ }
+ .password input{
+   margin-left: 10px;
+   border: none;
+   border-bottom: 1px dashed white;
+   font-size: 16px;
+   padding-left: 10px;
+   color: rgb(224, 224, 224);
+ }
+ .confirmpassword{
+   margin: 15px 10px;
+ }
+ .confirmpassword input{
+   margin-left: 10px;
+   border: none;
+   border-bottom: 1px dashed white;
+   font-size: 16px;
+   padding-left: 10px;
+   color: rgb(224, 224, 224);
+ }
+ .loginbutton{
+   margin-left: 20vw;
+ }
+ .loginbutton button{
+   color: white;
+   background-color: var(--red);
+   border: none;
+   padding: 5px 20px;
+   margin-top: 10px;
+   border-radius: 6px;
+   cursor: pointer;
+ }
+#signupbutton:hover{
+   background: none;
+   border: 1px solid var(--red);
+   border-radius: 10px;
+}
+ .bottom{
+   display: flex;
+   width: 95%;
+   justify-content: space-between;
+   margin-top: 15px;
+ }
+ #signbot{
+   color: white;
+   border: 1px solid var(--red);
+   padding: 3px 30px;
+   margin-top: 10px;
+   border-radius: 6px;
+   border-radius: 16px;
+   margin-left: 10px;
+   font-size: 14px;
+   cursor: pointer;
+   background-color: var(--red);
+ }
+ #logbot{
+   color: white;
+   border: 1px solid var(--red);
+   padding: 3px 30px;
+   margin-top: 10px;
+   border-radius: 6px;
+   border-radius: 16px;
+   margin-left: 15px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+ .error{
+   margin-left: 20px;
+   color: var(--red);
+   font-size: 16px;
+   font-weight: 300;
+   margin-top: 5px;
+ }
+@media (min-width : 678px) {
+    .link{
+      margin-top: 35px;
+    }
+    .nav{
+      position: absolute;
+      top: 87vh;
+      visibility: hidden;
+    }
+    .content{
+      position: absolute;
+      width: 400px;
+      left: 10vw;
+   }
+   .postform{
+      position: absolute;
+      left: 20%;
+   }
+   .newpost button{
+      border: 1px solid var(--red);
+      color: white;
+      margin: 10px 10px;
+      padding: 8px 10vw;
+   }
+   .username input{
+      width: 250px;
+   }
+   .posttitle input{
+      width: 250px;
+   }
+   .textarea textarea{
+      width: 300px;
+   }
+   .para{
+      width: 500px;
+   }
+   .userlogin{
+      position: relative;
+      left: 40vw;
+   }
+   .underline{
+      margin-left: 7.5vw;
+   }
+   #signupbutton{
+      position: relative;
+      right: 12vw;
+      cursor: pointer;
+   }
+}
+@media (max-width:987px) {
+   .taskbar{
+      width:200px;
+      left:40vw;
+      visibility: hidden;
+   }
+   .empty{
+      height: 100px;
+   }
+
+}
+
